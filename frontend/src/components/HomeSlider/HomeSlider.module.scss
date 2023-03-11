@@ -1,0 +1,174 @@
+.homeSliderContainer {
+  padding-top: 20px;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(1224px + 40px);
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 100%;
+  padding-top: 32px;
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-areas: ". title title title title title . image image image image image";
+  grid-column-gap: 24px;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.mainTitle {
+  grid-area: title;
+  h1 {
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 52px;
+  }
+  p {
+    color: #6f7974;
+    font-size: 20px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 28px;
+  }
+}
+
+.mainImage {
+  grid-area: image;
+  img {
+    width: 500px;
+  }
+}
+
+.insideTitle {
+  display: flex;
+  align-items: center;
+  p {
+    font-size: 12px;
+    letter-spacing: 0.3px;
+    line-height: 16px;
+    margin-left: 8px;
+    max-width: 264px;
+  }
+}
+
+.sliderSection {
+  display: flex;
+  position: absolute;
+  margin: 60px 0 0 -60px;
+}
+
+.sliderContainer {
+  margin-right: 20px;
+  width: 280px;
+  height: 280px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: #919eab33 0px 0px 2px 0px, #919eab1f 0px 12px 24px -4px;
+}
+
+.slider {
+  p {
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.3px;
+    line-height: 24px;
+    margin-bottom: 16px;
+  }
+
+  button {
+    // margin: 90px 0 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 12px 20px;
+    font-family: inherit;
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    background-color: #49e295;
+    border-radius: 10px;
+    font-weight: 500;
+  }
+}
+
+.sliderInside {
+  padding: 24px;
+}
+
+.sliderTitle {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+// -------------------------------
+
+// -------------------------------
+
+@media (min-width: 320px) {
+  .homeSliderContainer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  // .mainGrid {
+  //   grid-template-areas:
+  //     ". header header header header header . image image image image image "
+  //     ". stamps stamps stamps stamps stamps . image image image image image "
+  //     "children children children children children children children image image image image image ";
+  // }
+}
+
+// @media (min-width: 1024px) {
+//   .mainImage {
+//     margin-top: 0;
+//     margin-left: 0;
+//     margin-right: 0;
+//   }
+// }
+
+// @media (min-width: 600px) {
+//   .mainImage {
+//     min-height: 720px;
+//   }
+// }
+//
+
+// .mainImage {
+//   grid-area: image;
+//   position: relative;
+
+//   box-sizing: border-box;
+//   display: block;
+//   overflow: hidden;
+//   width: initial;
+//   height: initial;
+//   background: none;
+//   opacity: 1;
+//   border: 0;
+//   margin: 0;
+//   padding: 0;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   bottom: 0;
+//   right: 0;
+
+//   img {
+//     position: absolute;
+//     inset: 0px;
+//     box-sizing: border-box;
+//     padding: 0px;
+//     border: none;
+//     margin: auto;
+//     display: block;
+//     width: 0px;
+//     height: 0px;
+//     min-width: 100%;
+//     max-width: 100%;
+//     min-height: 100%;
+//     max-height: 100%;
+//     object-fit: cover;
+//   }
+// }
