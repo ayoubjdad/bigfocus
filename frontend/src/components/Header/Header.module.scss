@@ -1,0 +1,54 @@
+.headerContainer {
+  display: flex;
+  height: 80px;
+  max-width: 1248px;
+  margin: auto;
+  color: #1f2d27;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0;
+  padding: 16px 20px;
+  img {
+    width: 122px;
+    height: 24px;
+  }
+}
+
+.menuContainer {
+  display: flex;
+  margin: 0;
+}
+
+.menuElement {
+  flex: auto;
+  text-decoration: none;
+  align-items: center;
+  display: flex;
+  padding: 16px 20px;
+  font-weight: 700;
+  &:hover {
+    border-top: 5px solid #49e295;
+  }
+}
+
+.buttonHeader {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 16px 20px;
+  margin-left: auto;
+  padding: 12px 20px;
+  font-family: inherit;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  border: none;
+  background-color: #49e295;
+  border-radius: 10px;
+  font-weight: 500;
+}
