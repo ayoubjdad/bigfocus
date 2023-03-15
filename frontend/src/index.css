@@ -9,6 +9,8 @@
   font-style: normal;
 }
 
+@import "~@flaticon/flaticon-uicons/css/all/all";
+
 body {
   font-family: "Helvetica Now Display";
   margin: 0;
