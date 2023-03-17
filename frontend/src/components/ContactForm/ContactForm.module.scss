@@ -1,0 +1,169 @@
+.pourquoiSection {
+  color: gray;
+  background-color: #edf0ef;
+}
+
+@media (min-width: 1024px) {
+  .pourquoiContainer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}
+
+@media (min-width: 320px) {
+  .pourquoiContainer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.pourquoiContainer {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(1224px + 40px);
+  width: 100%;
+  padding: 64px 16px;
+}
+
+.pourquoi {
+  display: grid;
+  grid-column-gap: 16px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas:
+    "info info info info "
+    "cards cards cards cards ";
+}
+
+@media (min-width: 1024px) {
+  .pourquoi {
+    grid-template-areas: ". info info info info info . cards cards cards cards . ";
+    grid-column-gap: 24px;
+    grid-template-columns: repeat(12, 1fr);
+  }
+}
+
+@media (min-width: 600px) {
+  .pourquoi {
+    grid-template-areas: "info info info info cards cards cards cards ";
+    grid-column-gap: 36px;
+    grid-template-columns: repeat(8, 1fr);
+  }
+}
+
+.leftSide {
+  grid-area: info;
+  margin-bottom: 72px;
+}
+
+.rightSide {
+  grid-area: cards;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space;
+  height: 100%;
+}
+
+@media (min-width: 1024px) {
+  .title {
+    font-size: 40px !important;
+    line-height: 52px !important;
+  }
+}
+
+.title {
+  color: #1f2d27;
+  font-size: 28px;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 36px;
+  margin: 0;
+}
+
+.description {
+  color: #596b64;
+  font-size: 16px;
+  font-weight: 300;
+  letter-spacing: 0.3px;
+  line-height: 24px;
+  margin-top: 24px;
+}
+
+@media (min-width: 1024px) {
+  .description {
+    font-size: 20px !important;
+    letter-spacing: 0.5px !important;
+    line-height: 28px !important;
+  }
+}
+
+.item {
+  list-style: none;
+  margin-top: 1px;
+  margin-bottom: 64px;
+  position: relative;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.personalizedServiceCard {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+  .personalizedServiceCard {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.service {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  margin-left: 0;
+  margin-top: 28px;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .service {
+    max-width: 393px;
+    padding: 0;
+    margin-left: 25px;
+    margin-top: 0;
+  }
+}
+
+.serviceImage {
+  // background-color: #49e295;
+  // border-radius: 50%;
+}
+
+.serviceTitle {
+  color: #1f2d27;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: 28px;
+  margin: 0;
+}
+
+.serviceDescription {
+  color: #6f7974;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  line-height: 20px;
+  margin: 16px 0 0 0;
+}
