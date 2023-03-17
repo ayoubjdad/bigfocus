@@ -3,19 +3,23 @@ import styles from "./HomeSlider.module.scss";
 
 const sliders = [
   {
-    title: "Carro em garantia",
-    description: "De R$ 5 mil a R$ 150 mil. Juros a partir de 1,49% ao mês.",
-    link: "",
-  },
-  {
-    title: "Imóvel em garantia",
+    id: 1,
+    title: "Découvrez",
     description:
-      "De R$ 50 mil a R$ 3 milhões. Juros a partir de 0,99% ao mês + IPCA.",
+      "Réservez une démo avec l’un de nos co-créateurs pour découvrir toutes nos fonctionnalités inédites.",
     link: "",
   },
   {
-    title: "Creditas Benefícios",
-    description: "A primeira e única carteira de benefícios do RH.",
+    id: 2,
+    title: "Explorez",
+    description:
+      "L’équipe de Print.com vous accompagne dans le choix des meilleures solutions.",
+    link: "",
+  },
+  {
+    id: 3,
+    title: "Accédez",
+    description: "Parcourez le catalogue le plus innovant du web-to-print.",
     link: "",
   },
 ];
@@ -26,17 +30,18 @@ export default function HomeSlider() {
       <div className={styles.mainGrid}>
         <div className={styles.mainTitle}>
           <h1>
-            Empréstimo com a <b>menor taxa</b> do mercado
+            La plateforme où <b>créativité </b>et<b> impression</b> ne font
+            qu’un
           </h1>
           <p>
-            Use seu apartamento, casa, carro ou salário como garantia e tenha
-            até 240 meses para pagar.
+            <b>Bigfocus.ma</b> est la plateforme d’impression en ligne tant
+            attendue des Professionnels des Arts Graphiques.
           </p>
           <div className={styles.insideTitle}>
             <img src="https://api.creditas.io/creditas-site/_next/image?url=https%3A%2F%2Fapi.creditas.io%2Fcreditas-site%2Fimages%2Freclame-aqui.png&w=1920&q=75" />
             <p>
-              Ganhamos o Prêmio Reclame Aqui 2020, 2021 e 2022: melhor empresa
-              de empréstimo online.
+              Nous avons remporté le prix Reclame Aqui : Meilleure société de
+              print en ligne.
             </p>
           </div>
           <section className={styles.sliderSection}>
@@ -44,9 +49,9 @@ export default function HomeSlider() {
               <div className={styles.sliderContainer}>
                 <div className={styles.slider}>
                   <div className={styles.sliderInside}>
+                    <div className={styles.sliderId}>{slider.id}</div>
                     <div className={styles.sliderTitle}>{slider.title}</div>
                     <p>{slider.description}</p>
-                    <button>Simule</button>
                   </div>
                 </div>
               </div>
