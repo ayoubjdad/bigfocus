@@ -1,0 +1,49 @@
+.loginSection {
+  display: flex;
+}
+
+.loginContainer {
+  background-image: url("https://minimals.cc/assets/illustrations/illustration_dashboard.png");
+  background-color: #edf0ef;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 65vw;
+  height: 100vh;
+  display: flex;
+  margin-top: auto;
+  margin-bottom: auto;
+  justify-content: center;
+
+  h1 {
+    margin-top: 40px;
+    font-weight: 700;
+    line-height: 1.5;
+    font-size: 2rem;
+    max-width: 480px;
+    text-align: center;
+  }
+}
+
+.loginFormSide {
+  //   background-color: rgb(154, 151, 204);
+  width: 35vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  justify-content: center;
+}
+
+.loginForm {
+  display: block;
+
+  h1 {
+    font-size: 24px;
+    font-weight: 800;
+  }
+
+  p {
+    margin-bottom: 50px;
+  }
+}
