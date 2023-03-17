@@ -1,0 +1,21 @@
+.notificationContainer {
+  background-color: #1f2d27;
+  padding: 20px;
+}
+
+.notification {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.notificationText {
+  display: flex;
+  align-items: center;
+}
+
+.closeButton {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
