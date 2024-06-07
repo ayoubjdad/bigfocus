@@ -1,0 +1,33 @@
+.container {
+  display: grid;
+  background-color: #edf0ef;
+  //   width: 100%;
+  padding: 64px 16px;
+}
+
+.form {
+  display: grid;
+  gap: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.input {
+  font-family: "Helvetica Now Display";
+  padding: 8px;
+  border-radius: 8px;
+  border: 1px solid gray;
+  //   width: 100
+}
+
+.button {
+  border: none;
+  background-color: #49e295;
+}
+
+.article {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  width: 100%;
+}

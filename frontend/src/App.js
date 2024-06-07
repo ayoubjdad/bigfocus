@@ -6,6 +6,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Catalogue from "./pages/Catalogue";
 import Contact from "./pages/Contact";
+import CreatePDF from "./pages/CreatePDF/CreatePDF";
 
 const colorPalette = {
   black: "black",
@@ -25,6 +26,7 @@ function App() {
           <Route path="catalogue" element={<Catalogue />} />
           <Route path="contact" element={<Contact />} />
           <Route path="login" element={<Login />} />
+          <Route path="pdf" element={<CreatePDF />} />
         </Routes>
       </BrowserRouter>
       <Footer />
