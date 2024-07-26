@@ -9,5 +9,13 @@ export const invoiceSchema = {
     ice: "",
     date: "",
   },
-  items: [],
+  items: [
+    {
+      id: "",
+      alias: "",
+      quantity: "",
+      total: "",
+      unitPrice: "",
+    },
+  ],
 };

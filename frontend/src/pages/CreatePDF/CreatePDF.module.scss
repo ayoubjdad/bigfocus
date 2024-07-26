@@ -1,8 +1,12 @@
+.main {
+  background-color: #edf0ef;
+}
+
 .container {
   display: grid;
-  background-color: #edf0ef;
-  //   width: 100%;
-  padding: 64px 16px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 64px;
 }
 
 .form {
@@ -12,17 +16,32 @@
   margin-right: auto;
 }
 
+.partContainer {
+  display: flex;
+  gap: 12px;
+}
+
 .input {
   font-family: "Helvetica Now Display";
   padding: 8px;
   border-radius: 8px;
   border: 1px solid gray;
-  //   width: 100
+  width: 100%;
 }
 
 .button {
-  border: none;
+  cursor: pointer;
+  width: fit-content;
+  border: 1px solid #49e295;
   background-color: #49e295;
+  font-family: "Helvetica Now Display";
+  padding: 8px !important;
+  border-radius: 8px;
+}
+
+.deleteButton {
+  background-color: #f60d0d;
+  border: 1px solid #f60d0d;
 }
 
 .article {
