@@ -39,6 +39,21 @@
   border-radius: 8px;
 }
 
+.outlinedButton {
+  cursor: pointer;
+  width: fit-content;
+  border: 1px solid #49e295;
+  background-color: transparent;
+  font-family: "Helvetica Now Display";
+  padding: 8px !important;
+  border-radius: 8px;
+  transition: 600ms;
+  &:hover {
+    background-color: #bef3d8;
+    border: 1px solid #bef3d8;
+  }
+}
+
 .deleteButton {
   background-color: #f60d0d;
   border: 1px solid #f60d0d;

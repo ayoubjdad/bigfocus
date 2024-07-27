@@ -28,4 +28,14 @@ router.post("/create", async (req, res) => {
   }
 });
 
+// Get all invoices
+router.get("/", async (req, res) => {
+  try {
+    const invoices = await Invoice.find(); // Fetch all invoices from the database
+    res.status(200).json(invoices); // Respond with the invoices in JSON format
+  } catch (error) {
+    res.status(500).send("Error fetching invoices");
+  }
+});
+
 module.exports = router;
